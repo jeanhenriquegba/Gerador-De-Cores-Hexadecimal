@@ -21,7 +21,8 @@ document.body.style.backgroundColor = resultado;
 cor.style.color = resultado;
 corGuardada = resultado;
 corHistory.innerHTML += `<span style="background:${resultado};">${resultado}</span>`;
-
+let scrollar = document.querySelector(".historyContainer");
+    scrollar.scrollTop = scrollar.scrollHeight;
 });
 
 // Botão para copiar a cor
